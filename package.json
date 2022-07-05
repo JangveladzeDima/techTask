@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "ccxws": "^0.47.0",
+    "http": "^0.0.1-security",
+    "node-worker-threads-pool": "^1.5.1",
+    "os": "^0.1.2"
+  }
+}
