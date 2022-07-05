@@ -1,8 +1,7 @@
 import {BinanceClient} from "ccxws";
-import {parentPort} from "worker_threads";
+import {parentPort, workerData} from "node:worker_threads";
 
 const exchange = new BinanceClient();
-
 exchange.on("trade", (trade) => {
     parentPort.postMessage(trade)
 });
